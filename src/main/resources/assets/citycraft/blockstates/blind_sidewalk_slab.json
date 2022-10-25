@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/blind_sidewalk_slab",
+      "uvlock": true
+    },
+    "facing=east": {
+      "model": "citycraft:block/blind_sidewalk_slab",
+      "y": 90,"uvlock": true
+    },
+    "facing=south": {
+      "model": "citycraft:block/blind_sidewalk_slab",
+      "y": 180,"uvlock": true
+    },
+    "facing=west": {
+      "model": "citycraft:block/blind_sidewalk_slab",
+      "y": 270,"uvlock": true
+    }
+  }
+}

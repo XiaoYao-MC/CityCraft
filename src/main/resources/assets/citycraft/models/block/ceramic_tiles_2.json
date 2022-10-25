@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "citycraft:blocks/ceramic_tiles_2",
+    "particle": "citycraft:blocks/ceramic_tiles_2"
+  }
+}

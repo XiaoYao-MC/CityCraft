@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:ceramic_tiles_1"
+    },
+    "1": {
+      "item": "citycraft:ceramic_tiles_1"
+    },
+    "2": {
+      "item": "citycraft:ceramic_tiles_1"
+    },
+    "3": {
+      "item": "citycraft:ceramic_tiles_1"
+    }
+  },
+  "result": {
+    "item": "citycraft:ceramic_tiles_2",
+    "count": 4
+  }
+}

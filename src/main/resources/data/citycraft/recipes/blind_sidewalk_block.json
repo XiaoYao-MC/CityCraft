@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:yellow_dye"
+    },
+    "2": {
+      "item": "minecraft:yellow_dye"
+    },
+    "3": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "4": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "5": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "6": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "7": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "8": {
+      "item": "minecraft:yellow_concrete"
+    }
+  },
+  "result": {
+    "item": "citycraft:blind_sidewalk_block",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/construction_barrier",
+  "textures": {
+    "all": "citycraft:blocks/green_construction_barrier",
+    "particle": "citycraft:blocks/green_construction_barrier",
+    "0": "citycraft:blocks/green_construction_barrier"
+  }
+}

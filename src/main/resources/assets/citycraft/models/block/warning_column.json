@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/warning_column",
+  "textures": {
+    "all": "citycraft:blocks/warning_column",
+    "particle": "citycraft:blocks/warning_column",
+    "0": "citycraft:blocks/warning_column"
+  }
+}

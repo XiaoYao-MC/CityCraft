@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:fine_slates"
+    },
+    "1": {
+      "item": "citycraft:fine_slates"
+    },
+    "2": {
+      "item": "citycraft:fine_slates"
+    }
+  },
+  "result": {
+    "item": "citycraft:fine_slates_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "block.citycraft.ceramic_tiles_1": "Ceramic Tiles",
+  "block.citycraft.ceramic_tiles_2": "Ceramic Tiles",
+  "block.citycraft.fine_slates": "Fine Slates",
+  "block.citycraft.fine_slates_slab": "Fine Slates Slab",
+  "block.citycraft.blind_sidewalk_block": "Blind Sidewalk Block",
+  "block.citycraft.blind_sidewalk_slab": "Blind Sidewalk Slab",
+
+  "block.citycraft.green_belt": "Green Belt",
+  "block.citycraft.modern_iron_bars": "Modern Iron Bars",
+  "block.citycraft.warning_column": "Warning Column",
+  "block.citycraft.traffic_bollard": "Traffic Bollard",
+  "block.citycraft.blue_construction_barrier": "Blue Construction Barrier",
+  "block.citycraft.green_construction_barrier": "Green Construction Barrier",
+
+  "block.citycraft.square_traffic_sign_s": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_l": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_r": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_sl": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_sr": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_slr": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_ut": "Square Traffic Sign",
+  "block.citycraft.square_traffic_sign_lut": "Square Traffic Sign",
+
+  "itemGroup.citycraft.citycraft_blocks": "City Craft Blocks",
+  "itemGroup.citycraft.citycraft_roads_decorations": "City Craft Roads Decorations",
+  "itemGroup.citycraft.citycraft_traffic_signs": "City Craft Traffic Signs",
+  "itemGroup.citycraft.minecraft_special_things": "Minecraft Special Things"
+
+}

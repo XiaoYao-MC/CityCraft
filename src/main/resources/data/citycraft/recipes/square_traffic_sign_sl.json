@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:white_dye"
+    },
+    "3": {
+      "item": "minecraft:white_dye"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:blue_dye"
+    },
+    "7": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "citycraft:square_traffic_sign_sl",
+    "count": 3
+  }
+}

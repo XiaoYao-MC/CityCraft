@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_dye"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:white_dye"
+    },
+    "4": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "citycraft:square_traffic_sign_r",
+    "count": 3
+  }
+}

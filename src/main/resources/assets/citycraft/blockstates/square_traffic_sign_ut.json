@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "citycraft:block/square_traffic_sign_ut"
+    },
+    "facing=west": {
+      "model": "citycraft:block/square_traffic_sign_ut",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "citycraft:block/square_traffic_sign_ut",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "citycraft:block/square_traffic_sign_ut",
+      "y": 270
+    }
+  }
+}

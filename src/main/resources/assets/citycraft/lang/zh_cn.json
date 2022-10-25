@@ -1,0 +1,28 @@
+{
+  "block.citycraft.ceramic_tiles_1": "瓷砖",
+  "block.citycraft.ceramic_tiles_2": "瓷砖",
+  "block.citycraft.fine_slates": "细石板",
+  "block.citycraft.fine_slates_slab": "细石板台阶",
+  "block.citycraft.blind_sidewalk_block": "盲道方块",
+  "block.citycraft.blind_sidewalk_slab": "盲道台阶",
+
+  "block.citycraft.green_belt": "绿化带",
+  "block.citycraft.modern_iron_bars": "现代铁栅栏",
+  "block.citycraft.warning_column": "警示柱",
+  "block.citycraft.traffic_bollard": "交通护柱",
+  "block.citycraft.blue_construction_barrier": "蓝色建筑围挡",
+  "block.citycraft.green_construction_barrier": "绿色建筑围挡",
+  "block.citycraft.square_traffic_sign_s": "方形交通标识",
+  "block.citycraft.square_traffic_sign_l": "方形交通标识",
+  "block.citycraft.square_traffic_sign_r": "方形交通标识",
+  "block.citycraft.square_traffic_sign_sl": "方形交通标识",
+  "block.citycraft.square_traffic_sign_sr": "方形交通标识",
+  "block.citycraft.square_traffic_sign_slr": "方形交通标识",
+  "block.citycraft.square_traffic_sign_ut": "方形交通标识",
+  "block.citycraft.square_traffic_sign_lut": "方形交通标识",
+
+  "itemGroup.citycraft.citycraft_blocks": "城市工艺方块",
+  "itemGroup.citycraft.citycraft_roads_decorations": "城市工艺道路装饰",
+  "itemGroup.citycraft.citycraft_traffic_signs": "城市工艺交通标识",
+  "itemGroup.citycraft.minecraft_special_things": "Minecraft特殊物品"
+}

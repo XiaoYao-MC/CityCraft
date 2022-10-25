@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:spruce_trapdoor"
+    },
+    "3": {
+      "item": "minecraft:spruce_trapdoor"
+    },
+    "4": {
+      "item": "minecraft:podzol"
+    },
+    "5": {
+      "item": "minecraft:spruce_trapdoor"
+    },
+    "7": {
+      "item": "minecraft:spruce_trapdoor"
+    }
+  },
+  "result": {
+    "item": "citycraft:green_belt",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_dye"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:white_dye"
+    },
+    "3": {
+      "item": "minecraft:white_dye"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:white_dye"
+    },
+    "6": {
+      "item": "minecraft:blue_dye"
+    },
+    "7": {
+      "item": "minecraft:white_dye"
+    },
+    "8": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "item": "citycraft:square_traffic_sign_slr",
+    "count": 6
+  }
+}

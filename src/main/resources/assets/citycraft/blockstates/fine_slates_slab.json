@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/fine_slates_slab"
+    },
+    "type=top": {
+      "model": "citycraft:block/fine_slates_slab_top"
+    },
+    "type=double": {
+      "model": "citycraft:block/fine_slates_slab_full"
+    }
+  }
+}

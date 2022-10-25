@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/modern_iron_bars",
+  "textures": {
+    "all": "citycraft:blocks/black",
+    "particle": "citycraft:blocks/black",
+    "missing": "citycraft:blocks/black"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:fine_slates",
+    "citycraft:fine_slates_slab",
+    "citycraft:blind_sidewalk_block",
+    "citycraft:blind_sidewalk_slab",
+    "citycraft:modern_iron_bars",
+    "citycraft:warning_column",
+    "citycraft:traffic_bollard",
+    "citycraft:blue_construction_barrier",
+    "citycraft:green_construction_barrier",
+    "citycraft:square_traffic_sign_s",
+    "citycraft:square_traffic_sign_l",
+    "citycraft:square_traffic_sign_r",
+    "citycraft:square_traffic_sign_sl",
+    "citycraft:square_traffic_sign_sr",
+    "citycraft:square_traffic_sign_slr",
+    "citycraft:square_traffic_sign_ut",
+    "citycraft:square_traffic_sign_lut"
+  ]
+}

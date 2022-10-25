@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "citycraft:blocks/fine_slates",
+    "particle": "citycraft:blocks/fine_slates"
+  }
+}

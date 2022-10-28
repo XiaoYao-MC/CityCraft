@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/speed_limit_sign_10",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "citycraft:block/speed_limit_sign_10",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "citycraft:block/speed_limit_sign_10"
+    },
+    "facing=west": {
+      "model": "citycraft:block/speed_limit_sign_10",
+      "y": 90
+    }
+  }
+}

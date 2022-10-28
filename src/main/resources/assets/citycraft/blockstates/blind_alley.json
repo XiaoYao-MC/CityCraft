@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/blind_alley"
+    },
+    "facing=east": {
+      "model": "citycraft:block/blind_alley",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/blind_alley",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/blind_alley",
+      "y": 270
+    }
+  }
+}

@@ -5,6 +5,7 @@
   "block.citycraft.fine_slates_slab": "Fine Slates Slab",
   "block.citycraft.blind_sidewalk_block": "Blind Sidewalk Block",
   "block.citycraft.blind_sidewalk_slab": "Blind Sidewalk Slab",
+  "block.citycraft.amazing_block": "Amazing Block",
 
   "block.citycraft.green_belt": "Green Belt",
   "block.citycraft.modern_iron_bars": "Modern Iron Bars",
@@ -12,7 +13,13 @@
   "block.citycraft.traffic_bollard": "Traffic Bollard",
   "block.citycraft.blue_construction_barrier": "Blue Construction Barrier",
   "block.citycraft.green_construction_barrier": "Green Construction Barrier",
+  "block.citycraft.elevated_road_guardrail": "Elevated Road guardrail",
+  "block.citycraft.sound_insulation_board_1": "Sound Insulation Board",
 
+  "block.citycraft.traffic_sign_pole_1": "Traffic Sign Pole",
+  "block.citycraft.traffic_sign_support_frame_1": "Traffic Sign Support Frame",
+  "block.citycraft.traffic_sign_support_frame_2": "Traffic Sign Support Frame",
+  "block.citycraft.traffic_sign_support_frame_3": "Traffic Sign Support Frame",
   "block.citycraft.square_traffic_sign_s": "Square Traffic Sign",
   "block.citycraft.square_traffic_sign_l": "Square Traffic Sign",
   "block.citycraft.square_traffic_sign_r": "Square Traffic Sign",
@@ -21,10 +28,36 @@
   "block.citycraft.square_traffic_sign_slr": "Square Traffic Sign",
   "block.citycraft.square_traffic_sign_ut": "Square Traffic Sign",
   "block.citycraft.square_traffic_sign_lut": "Square Traffic Sign",
+  "block.citycraft.speed_limit_sign_10": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_20": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_30": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_40": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_50": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_60": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_70": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_80": "Speed Limit Sign",
+  "block.citycraft.speed_limit_sign_90": "Speed Limit Sign",
+
+  "block.citycraft.insulator_1": "Insulator",
+  "block.citycraft.overhead_catenary_1": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_2": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_3": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_4": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_5": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_6": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_7": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_8": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_9": "Overhead Catenary",
+  "block.citycraft.overhead_catenary_10": "Overhead Catenary",
 
   "itemGroup.citycraft.citycraft_blocks": "City Craft Blocks",
   "itemGroup.citycraft.citycraft_roads_decorations": "City Craft Roads Decorations",
   "itemGroup.citycraft.citycraft_traffic_signs": "City Craft Traffic Signs",
-  "itemGroup.citycraft.minecraft_special_things": "Minecraft Special Things"
+  "itemGroup.citycraft.citycraft_railway": "City Craft Railway",
+  "itemGroup.citycraft.minecraft_special_things": "Minecraft Special Things",
 
+  "block.citycraft.amazing_block.tooltip": "(What's this?I think you can right click the block before putting it.)",
+  "block.citycraft.insulator_1.tooltip": "(Actually,you can put a block on its right side.)",
+
+  "subtitles.citycraft.never_gonna_give_you_up":"Rickroll"
 }

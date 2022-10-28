@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "citycraft:block/amazing_block",
+    "particle": "citycraft:block/amazing_block"
+  }
+}

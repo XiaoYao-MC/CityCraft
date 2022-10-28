@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/insulator",
+  "textures": {
+    "all": "citycraft:block/white",
+    "particle": "citycraft:block/white",
+    "missing": "citycraft:block/white"
+  }
+}

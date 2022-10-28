@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/elevated_road_guardrail",
+  "textures": {
+    "all": "citycraft:block/elevated_road_guardrail",
+    "particle": "citycraft:block/elevated_road_guardrail",
+    "0": "citycraft:block/elevated_road_guardrail"
+  }
+}

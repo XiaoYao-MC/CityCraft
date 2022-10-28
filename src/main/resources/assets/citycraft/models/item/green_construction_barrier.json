@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "citycraft:items/green_construction_barrier"
+    "layer0": "citycraft:item/green_construction_barrier"
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "citycraft:blocks/green_belt_bottom",
-    "up": "citycraft:blocks/green_belt_top",
-    "north": "citycraft:blocks/green_belt_side",
-    "east": "citycraft:blocks/green_belt_side",
-    "south": "citycraft:blocks/green_belt_side",
-    "west": "citycraft:blocks/green_belt_side",
-    "particle": "citycraft:blocks/green_belt_bottom"
+    "down": "citycraft:block/green_belt_bottom",
+    "up": "citycraft:block/green_belt_top",
+    "north": "citycraft:block/green_belt_side",
+    "east": "citycraft:block/green_belt_side",
+    "south": "citycraft:block/green_belt_side",
+    "west": "citycraft:block/green_belt_side",
+    "particle": "citycraft:block/green_belt_bottom"
   }
 }

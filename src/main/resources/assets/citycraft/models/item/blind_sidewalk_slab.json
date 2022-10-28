@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "citycraft:items/blind_sidewalk_slab"
+    "layer0": "citycraft:item/blind_sidewalk_slab"
   }
 }

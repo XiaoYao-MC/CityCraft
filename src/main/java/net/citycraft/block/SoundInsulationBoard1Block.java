@@ -26,15 +26,11 @@ public class SoundInsulationBoard1Block extends HorizontalFacingBlock {
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
-        switch(dir){
-            case NORTH:
-            case SOUTH:
-                return VoxelShapes.cuboid(0f, 0f, 6/16f, 1f, 2f, 10/16f);
-            case EAST:
-            case WEST:
-                return VoxelShapes.cuboid(6/16f,0f,0f,10/16f,2f,1f);
-        }
-        return null;
+        return switch (dir) {
+            case NORTH, SOUTH -> VoxelShapes.cuboid(0f, 0f, 6 / 16f, 1f, 2f, 10 / 16f);
+            case EAST, WEST -> VoxelShapes.cuboid(6 / 16f, 0f, 0f, 10 / 16f, 2f, 1f);
+            default -> null;
+        };
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {

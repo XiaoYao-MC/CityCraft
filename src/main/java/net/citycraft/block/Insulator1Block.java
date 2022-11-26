@@ -10,7 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -29,7 +28,7 @@ public class Insulator1Block extends HorizontalFacingBlock {
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("block.citycraft.insulator_1.tooltip").formatted(Formatting.DARK_PURPLE));
+        tooltip.add(Text.translatable("block.citycraft.insulator_1.tooltip").formatted(Formatting.DARK_PURPLE));
     }
 
     @Override
@@ -39,17 +38,13 @@ public class Insulator1Block extends HorizontalFacingBlock {
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
-        switch(dir){
-            case NORTH:
-                return VoxelShapes.cuboid(0f,0f,7/16f,2f,1f,9/16f);
-            case SOUTH:
-                return VoxelShapes.cuboid(-1f,0f,7/16f,1f,1f,9/16f);
-            case EAST:
-                return VoxelShapes.cuboid(7/16f, 0f, 0f, 9/16f, 1f, 2f);
-            case WEST:
-                return VoxelShapes.cuboid(7/16f, 0f, -1f, 9/16f, 1f, 1f);
-        }
-        return null;
+        return switch (dir) {
+            case NORTH -> VoxelShapes.cuboid(0f, 0f, 7 / 16f, 2f, 1f, 9 / 16f);
+            case SOUTH -> VoxelShapes.cuboid(-1f, 0f, 7 / 16f, 1f, 1f, 9 / 16f);
+            case EAST -> VoxelShapes.cuboid(7 / 16f, 0f, 0f, 9 / 16f, 1f, 2f);
+            case WEST -> VoxelShapes.cuboid(7 / 16f, 0f, -1f, 9 / 16f, 1f, 1f);
+            default -> null;
+        };
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {

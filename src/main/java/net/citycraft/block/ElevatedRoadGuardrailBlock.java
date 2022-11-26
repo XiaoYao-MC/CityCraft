@@ -26,15 +26,11 @@ public class ElevatedRoadGuardrailBlock extends HorizontalFacingBlock {
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
-        switch(dir){
-            case NORTH:
-            case SOUTH:
-                return VoxelShapes.cuboid(0f, 0f, 5/16f, 1f, 1.5f, 11/16f);
-            case EAST:
-            case WEST:
-                return VoxelShapes.cuboid(5/16f,0f,0f,11/16f,1.5f,1f);
-        }
-        return null;
+        return switch (dir) {
+            case NORTH, SOUTH -> VoxelShapes.cuboid(0f, 0f, 5 / 16f, 1f, 1.5f, 11 / 16f);
+            case EAST, WEST -> VoxelShapes.cuboid(5 / 16f, 0f, 0f, 11 / 16f, 1.5f, 1f);
+            default -> null;
+        };
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {

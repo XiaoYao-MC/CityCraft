@@ -26,15 +26,11 @@ public class ModernIronBarsBlock extends HorizontalFacingBlock {
 
 	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
 		Direction dir = state.get(FACING);
-		switch(dir){
-			case NORTH:
-			case SOUTH:
-				return VoxelShapes.cuboid(0f, 0f, 7/16f, 1f, 18/16f, 9/16f);
-			case EAST:
-			case WEST:
-				return VoxelShapes.cuboid(7/16f,0f,0f,9/16f,18/16f,1f);
-		}
-		return null;
+		return switch (dir) {
+			case NORTH, SOUTH -> VoxelShapes.cuboid(0f, 0f, 7 / 16f, 1f, 18 / 16f, 9 / 16f);
+			case EAST, WEST -> VoxelShapes.cuboid(7 / 16f, 0f, 0f, 9 / 16f, 18 / 16f, 1f);
+			default -> null;
+		};
 	}
 
 	public BlockState getPlacementState(ItemPlacementContext ctx) {

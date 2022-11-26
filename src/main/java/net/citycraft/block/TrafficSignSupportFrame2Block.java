@@ -27,17 +27,13 @@ public class TrafficSignSupportFrame2Block extends HorizontalFacingBlock {
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
-        switch(dir){
-            case NORTH:
-                return VoxelShapes.cuboid(7/16f, 0f, 15/16f, 1f, 12/16f, 1f);
-            case SOUTH:
-                return VoxelShapes.cuboid(0f, 0f, 0f, 9/16f, 12/16f, 1/16f);
-            case EAST:
-                return VoxelShapes.cuboid(0f,0f,7/16f,1/16f,12/16f,1f);
-            case WEST:
-                return VoxelShapes.cuboid(15/16f,0f,0f,1f,12/16f,9/16f);
-        }
-        return null;
+        return switch (dir) {
+            case NORTH -> VoxelShapes.cuboid(7 / 16f, 0f, 15 / 16f, 1f, 12 / 16f, 1f);
+            case SOUTH -> VoxelShapes.cuboid(0f, 0f, 0f, 9 / 16f, 12 / 16f, 1 / 16f);
+            case EAST -> VoxelShapes.cuboid(0f, 0f, 7 / 16f, 1 / 16f, 12 / 16f, 1f);
+            case WEST -> VoxelShapes.cuboid(15 / 16f, 0f, 0f, 1f, 12 / 16f, 9 / 16f);
+            default -> null;
+        };
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {

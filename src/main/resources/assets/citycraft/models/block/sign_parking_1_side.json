@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/circle_traffic_sign_side",
+  "textures": {
+    "all": "citycraft:block/sign_parking_1",
+    "particle": "citycraft:block/sign_parking_1",
+    "0": "citycraft:block/sign_parking_1"
+  }
+}

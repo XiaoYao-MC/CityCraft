@@ -17,6 +17,15 @@
     "citycraft:square_traffic_sign_sr",
     "citycraft:square_traffic_sign_slr",
     "citycraft:square_traffic_sign_ut",
-    "citycraft:square_traffic_sign_lut"
+    "citycraft:square_traffic_sign_lut",
+    "citycraft:speed_limit_sign_10",
+    "citycraft:speed_limit_sign_20",
+    "citycraft:speed_limit_sign_30",
+    "citycraft:speed_limit_sign_40",
+    "citycraft:speed_limit_sign_50",
+    "citycraft:speed_limit_sign_60",
+    "citycraft:speed_limit_sign_70",
+    "citycraft:speed_limit_sign_80",
+    "citycraft:speed_limit_sign_90"
   ]
 }

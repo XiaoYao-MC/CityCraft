@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,side=false": {
+      "model": "citycraft:block/speed_limit_sign_90"
+    },
+    "facing=east,side=false": {
+      "model": "citycraft:block/speed_limit_sign_90",
+      "y": 90
+    },
+    "facing=south,side=false": {
+      "model": "citycraft:block/speed_limit_sign_90",
+      "y": 180
+    },
+    "facing=west,side=false": {
+      "model": "citycraft:block/speed_limit_sign_90",
+      "y": 270
+    },
+    "facing=north,side=true": {
+      "model": "citycraft:block/speed_limit_sign_90_side"
+    },
+    "facing=east,side=true": {
+      "model": "citycraft:block/speed_limit_sign_90_side",
+      "y": 90
+    },
+    "facing=south,side=true": {
+      "model": "citycraft:block/speed_limit_sign_90_side",
+      "y": 180
+    },
+    "facing=west,side=true": {
+      "model": "citycraft:block/speed_limit_sign_90_side",
+      "y": 270
+    }
+  }
+}

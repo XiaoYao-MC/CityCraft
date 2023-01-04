@@ -1,8 +1,8 @@
 {
   "parent": "citycraft:custom/square_traffic_sign",
   "textures": {
-    "all": "citycraft:blocks/square_traffic_sign_slr",
-    "particle": "citycraft:blocks/square_traffic_sign_slr",
-    "missing": "citycraft:blocks/square_traffic_sign_slr"
+    "all": "citycraft:block/square_traffic_sign_slr",
+    "particle": "citycraft:block/square_traffic_sign_slr",
+    "missing": "citycraft:block/square_traffic_sign_slr"
   }
 }

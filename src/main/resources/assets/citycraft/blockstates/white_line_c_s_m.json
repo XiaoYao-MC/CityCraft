@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/white_line_c_s_m"
+    },
+    "facing=east": {
+      "model": "citycraft:block/white_line_c_s_m",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/white_line_c_s_m",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/white_line_c_s_m",
+      "y": 270
+    }
+  }
+}

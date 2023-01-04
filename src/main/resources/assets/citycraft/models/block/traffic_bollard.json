@@ -1,8 +1,8 @@
 {
   "parent": "citycraft:custom/traffic_bollard",
   "textures": {
-    "all": "citycraft:blocks/traffic_bollard",
-    "particle": "citycraft:blocks/traffic_bollard",
-    "0": "citycraft:blocks/traffic_bollard"
+    "all": "citycraft:block/traffic_bollard",
+    "particle": "citycraft:block/traffic_bollard",
+    "0": "citycraft:block/traffic_bollard"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/overhead_catenary_support_frame_1",
+  "textures": {
+    "all": "citycraft:block/white",
+    "particle": "citycraft:block/white",
+    "missing": "citycraft:block/white"
+  }
+}

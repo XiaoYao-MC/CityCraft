@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "citycraft:item/yellow_line_d"
+  }
+}

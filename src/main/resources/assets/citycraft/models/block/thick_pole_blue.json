@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/thick_pole",
+  "textures": {
+    "all": "citycraft:block/blue",
+    "particle": "citycraft:block/blue",
+    "missing": "citycraft:block/blue"
+  }
+}

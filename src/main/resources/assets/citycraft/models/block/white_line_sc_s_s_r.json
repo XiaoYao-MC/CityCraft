@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/white_line_sc_s_s_r",
+    "particle": "citycraft:block/white_line_sc_s_s_r",
+    "0": "citycraft:block/white_line_sc_s_s_r"
+  }
+}

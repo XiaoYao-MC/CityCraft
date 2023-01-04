@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/overhead_catenary_support_frame_1"
+    },
+    "facing=east": {
+      "model": "citycraft:block/overhead_catenary_support_frame_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/overhead_catenary_support_frame_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/overhead_catenary_support_frame_1",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "citycraft:item/speed_limit_sign_30"
+  }
+}

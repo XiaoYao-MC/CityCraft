@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/medium_pole",
+  "textures": {
+    "all": "citycraft:block/white",
+    "particle": "citycraft:block/white",
+    "missing": "citycraft:block/white"
+  }
+}

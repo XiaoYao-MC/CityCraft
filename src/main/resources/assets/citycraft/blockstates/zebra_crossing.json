@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/zebra_crossing"
+    },
+    "facing=east": {
+      "model": "citycraft:block/zebra_crossing",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/zebra_crossing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/zebra_crossing",
+      "y": 270
+    }
+  }
+}

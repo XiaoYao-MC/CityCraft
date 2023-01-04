@@ -1,8 +1,8 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "bottom": "citycraft:blocks/fine_slates",
-    "top": "citycraft:blocks/fine_slates",
-    "side": "citycraft:blocks/fine_slates"
+    "bottom": "citycraft:block/fine_slates",
+    "top": "citycraft:block/fine_slates",
+    "side": "citycraft:block/fine_slates"
   }
 }

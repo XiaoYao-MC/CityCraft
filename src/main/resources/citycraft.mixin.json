@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.citycraft.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "package": "net.citycraft",
+  "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [

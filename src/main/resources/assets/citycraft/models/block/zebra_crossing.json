@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/zebra_crossing",
+    "particle": "citycraft:block/zebra_crossing",
+    "0": "citycraft:block/zebra_crossing"
+  }
+}

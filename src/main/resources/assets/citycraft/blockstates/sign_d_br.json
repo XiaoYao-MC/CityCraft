@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,side=false": {
+      "model": "citycraft:block/sign_d_br"
+    },
+    "facing=east,side=false": {
+      "model": "citycraft:block/sign_d_br",
+      "y": 90
+    },
+    "facing=south,side=false": {
+      "model": "citycraft:block/sign_d_br",
+      "y": 180
+    },
+    "facing=west,side=false": {
+      "model": "citycraft:block/sign_d_br",
+      "y": 270
+    },
+    "facing=north,side=true": {
+      "model": "citycraft:block/sign_d_br_side"
+    },
+    "facing=east,side=true": {
+      "model": "citycraft:block/sign_d_br_side",
+      "y": 90
+    },
+    "facing=south,side=true": {
+      "model": "citycraft:block/sign_d_br_side",
+      "y": 180
+    },
+    "facing=west,side=true": {
+      "model": "citycraft:block/sign_d_br_side",
+      "y": 270
+    }
+  }
+}

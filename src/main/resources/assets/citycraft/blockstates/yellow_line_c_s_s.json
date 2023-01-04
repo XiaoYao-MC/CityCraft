@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/yellow_line_c_s_s"
+    },
+    "facing=east": {
+      "model": "citycraft:block/yellow_line_c_s_s",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/yellow_line_c_s_s",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/yellow_line_c_s_s",
+      "y": 270
+    }
+  }
+}

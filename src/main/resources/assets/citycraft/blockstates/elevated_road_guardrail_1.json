@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/elevated_road_guardrail_1"
+    },
+    "facing=east": {
+      "model": "citycraft:block/elevated_road_guardrail_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/elevated_road_guardrail_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/elevated_road_guardrail_1",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "citycraft:block/traffic_sign_pole_1"
+    },
+    "facing=west": {
+      "model": "citycraft:block/traffic_sign_pole_1",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "citycraft:block/traffic_sign_pole_1",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "citycraft:block/traffic_sign_pole_1",
+      "y": 270
+    }
+  }
+}

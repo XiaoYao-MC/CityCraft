@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/circle_traffic_sign",
+  "textures": {
+    "all": "citycraft:block/sign_d_br",
+    "particle": "citycraft:block/sign_d_br",
+    "0": "citycraft:block/sign_d_br"
+  }
+}

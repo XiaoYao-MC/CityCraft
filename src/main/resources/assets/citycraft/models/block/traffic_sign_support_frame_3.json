@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/traffic_sign_support_frame_3",
+  "textures": {
+    "all": "citycraft:block/white",
+    "particle": "citycraft:block/white",
+    "0": "citycraft:block/white"
+  }
+}

@@ -1,12 +1,19 @@
 package net.citycraft;
 
 import net.citycraft.block.*;
+//import net.citycraft.blockentity.BoxBlockEntity;
+//import net.citycraft.screen.BoxScreenHandler;
+import net.citycraft.item.ATipFromLanneYaoItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
+//import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
+//import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.block.*;
+//import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.*;
+//import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -67,6 +74,197 @@ public class CitycraftMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("citycraft","amazing_block"), new BlockItem(AMAZING_BLOCK, new Item.Settings()));
     }
 
+    //* CITYCRAFT_ROAD ↓ *//
+
+    public static final Block ASPHALT = new Block
+            (FabricBlockSettings.of(Material.STONE,MapColor.BLACK).sounds(BlockSoundGroup.STONE).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","asphalt"), ASPHALT);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","asphalt"), new BlockItem(ASPHALT, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_S_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_s_m"), WHITE_LINE_S_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_s_m"), new BlockItem(WHITE_LINE_S_M, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_S_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_s_s"), WHITE_LINE_S_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_s_s"), new BlockItem(WHITE_LINE_S_S, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_D = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_d"), WHITE_LINE_D);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_d"), new BlockItem(WHITE_LINE_D, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_R_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_r_s"), WHITE_LINE_C_R_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_r_s"), new BlockItem(WHITE_LINE_C_R_S, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_R_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_r_m"), WHITE_LINE_C_R_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_r_m"), new BlockItem(WHITE_LINE_C_R_M, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_R_L = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_r_l"), WHITE_LINE_C_R_L);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_r_l"), new BlockItem(WHITE_LINE_C_R_L, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_S_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_s_s"), WHITE_LINE_C_S_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_s_s"), new BlockItem(WHITE_LINE_C_S_S, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_S_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_s_m"), WHITE_LINE_C_S_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_s_m"), new BlockItem(WHITE_LINE_C_S_M, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_C_C_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_c_c_m"), WHITE_LINE_C_C_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_c_c_m"), new BlockItem(WHITE_LINE_C_C_M, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_SC_R_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_sc_r_m"), WHITE_LINE_SC_R_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_sc_r_m"), new BlockItem(WHITE_LINE_SC_R_M, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_SC_S_S_L = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_sc_s_s_l"), WHITE_LINE_SC_S_S_L);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_sc_s_s_l"), new BlockItem(WHITE_LINE_SC_S_S_L, new Item.Settings()));
+    }
+
+    public static final LineBlock WHITE_LINE_SC_S_S_R = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","white_line_sc_s_s_r"), WHITE_LINE_SC_S_S_R);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","white_line_sc_s_s_r"), new BlockItem(WHITE_LINE_SC_S_S_R, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_S_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_s_m"), YELLOW_LINE_S_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_s_m"), new BlockItem(YELLOW_LINE_S_M, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_S_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_s_s"), YELLOW_LINE_S_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_s_s"), new BlockItem(YELLOW_LINE_S_S, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_D = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_d"), YELLOW_LINE_D);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_d"), new BlockItem(YELLOW_LINE_D, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_R_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_r_s"), YELLOW_LINE_C_R_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_r_s"), new BlockItem(YELLOW_LINE_C_R_S, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_R_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_r_m"), YELLOW_LINE_C_R_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_r_m"), new BlockItem(YELLOW_LINE_C_R_M, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_R_L = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_r_l"), YELLOW_LINE_C_R_L);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_r_l"), new BlockItem(YELLOW_LINE_C_R_L, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_S_S = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_s_s"), YELLOW_LINE_C_S_S);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_s_s"), new BlockItem(YELLOW_LINE_C_S_S, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_S_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_s_m"), YELLOW_LINE_C_S_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_s_m"), new BlockItem(YELLOW_LINE_C_S_M, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_C_C_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_c_c_m"), YELLOW_LINE_C_C_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_c_c_m"), new BlockItem(YELLOW_LINE_C_C_M, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_SC_R_M = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_sc_r_m"), YELLOW_LINE_SC_R_M);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_sc_r_m"), new BlockItem(YELLOW_LINE_SC_R_M, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_SC_S_S_L = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_sc_s_s_l"), YELLOW_LINE_SC_S_S_L);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_sc_s_s_l"), new BlockItem(YELLOW_LINE_SC_S_S_L, new Item.Settings()));
+    }
+
+    public static final LineBlock YELLOW_LINE_SC_S_S_R = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.YELLOW).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","yellow_line_sc_s_s_r"), YELLOW_LINE_SC_S_S_R);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","yellow_line_sc_s_s_r"), new BlockItem(YELLOW_LINE_SC_S_S_R, new Item.Settings()));
+    }
+
+    public static final LineBlock ZEBRA_CROSSING = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","zebra_crossing"), ZEBRA_CROSSING);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","zebra_crossing"), new BlockItem(ZEBRA_CROSSING, new Item.Settings()));
+    }
+
+    public static final LineBlock GROUND_SIGN_PARKING = new LineBlock
+            (FabricBlockSettings.of(Material.STONE,MapColor.WHITE).sounds(BlockSoundGroup.STONE).strength(1f,1f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","ground_sign_parking"), GROUND_SIGN_PARKING);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","ground_sign_parking"), new BlockItem(GROUND_SIGN_PARKING, new Item.Settings()));
+    }
+
     //* CITYCRAFT_ROADS_DECORATION ↓ *//
 
     public static final Block GREEN_BELT = new Block
@@ -110,11 +308,11 @@ public class CitycraftMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("citycraft","green_construction_barrier"), new BlockItem(GREEN_CONSTRUCTION_BARRIER, new Item.Settings()));
     }
 
-    public static final ElevatedRoadGuardrailBlock ELEVATED_ROAD_GUARDRAIL = new ElevatedRoadGuardrailBlock
+    public static final ElevatedRoadGuardrail1Block ELEVATED_ROAD_GUARDRAIL_1 = new ElevatedRoadGuardrail1Block
             (FabricBlockSettings.of(Material.METAL,MapColor.GREEN).sounds(BlockSoundGroup.METAL).strength(1f,7f).requiresTool());
     {
-        Registry.register(Registry.BLOCK, new Identifier("citycraft","elevated_road_guardrail"), ELEVATED_ROAD_GUARDRAIL);
-        Registry.register(Registry.ITEM, new Identifier("citycraft","elevated_road_guardrail"), new BlockItem(ELEVATED_ROAD_GUARDRAIL, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","elevated_road_guardrail_1"), ELEVATED_ROAD_GUARDRAIL_1);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","elevated_road_guardrail_1"), new BlockItem(ELEVATED_ROAD_GUARDRAIL_1, new Item.Settings()));
     }
 
     public static final SoundInsulationBoard1Block SOUND_INSULATION_BOARD_1 = new SoundInsulationBoard1Block
@@ -211,75 +409,187 @@ public class CitycraftMod implements ModInitializer {
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_10 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_10"), SPEED_LIMIT_SIGN_10);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_10"), new BlockItem(SPEED_LIMIT_SIGN_10, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_20 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_20"), SPEED_LIMIT_SIGN_20);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_20"), new BlockItem(SPEED_LIMIT_SIGN_20, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_30 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_30"), SPEED_LIMIT_SIGN_30);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_30"), new BlockItem(SPEED_LIMIT_SIGN_30, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_40 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_40"), SPEED_LIMIT_SIGN_40);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_40"), new BlockItem(SPEED_LIMIT_SIGN_40, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_50 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_50"), SPEED_LIMIT_SIGN_50);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_50"), new BlockItem(SPEED_LIMIT_SIGN_50, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_60 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_60"), SPEED_LIMIT_SIGN_60);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_60"), new BlockItem(SPEED_LIMIT_SIGN_60, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_70 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_70"), SPEED_LIMIT_SIGN_70);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_70"), new BlockItem(SPEED_LIMIT_SIGN_70, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_80 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_80"), SPEED_LIMIT_SIGN_80);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_80"), new BlockItem(SPEED_LIMIT_SIGN_80, new Item.Settings()));
     }
 
     public static final CircleTrafficSignBlock SPEED_LIMIT_SIGN_90 = new CircleTrafficSignBlock
-            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft","speed_limit_sign_90"), SPEED_LIMIT_SIGN_90);
         Registry.register(Registry.ITEM, new Identifier("citycraft","speed_limit_sign_90"), new BlockItem(SPEED_LIMIT_SIGN_90, new Item.Settings()));
     }
 
-    //* CITYCRAFT_RAILWAY ↓ *//
+    public static final ThinPoleBlock THIN_POLE_BLUE = new ThinPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thin_pole_blue"), THIN_POLE_BLUE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thin_pole_blue"), new BlockItem(THIN_POLE_BLUE, new Item.Settings()));
+    }
 
-    public static final Insulator1Block INSULATOR_1 = new Insulator1Block
+    public static final ThinPoleBlock THIN_POLE_GRAY = new ThinPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.GRAY).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thin_pole_gray"), THIN_POLE_GRAY);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thin_pole_gray"), new BlockItem(THIN_POLE_GRAY, new Item.Settings()));
+    }
+
+    public static final ThinPoleBlock THIN_POLE_WHITE = new ThinPoleBlock
             (FabricBlockSettings.of(Material.METAL,MapColor.WHITE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
     {
-        Registry.register(Registry.BLOCK, new Identifier("citycraft","insulator_1"), INSULATOR_1);
-        Registry.register(Registry.ITEM, new Identifier("citycraft","insulator_1"), new BlockItem(INSULATOR_1, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thin_pole_white"), THIN_POLE_WHITE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thin_pole_white"), new BlockItem(THIN_POLE_WHITE, new Item.Settings()));
+    }
+
+    public static final MediumPoleBlock MEDIUM_POLE_BLUE = new MediumPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","medium_pole_blue"), MEDIUM_POLE_BLUE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","medium_pole_blue"), new BlockItem(MEDIUM_POLE_BLUE, new Item.Settings()));
+    }
+
+    public static final MediumPoleBlock MEDIUM_POLE_GRAY = new MediumPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.GRAY).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","medium_pole_gray"), MEDIUM_POLE_GRAY);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","medium_pole_gray"), new BlockItem(MEDIUM_POLE_GRAY, new Item.Settings()));
+    }
+
+    public static final MediumPoleBlock MEDIUM_POLE_WHITE = new MediumPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.WHITE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","medium_pole_white"), MEDIUM_POLE_WHITE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","medium_pole_white"), new BlockItem(MEDIUM_POLE_WHITE, new Item.Settings()));
+    }
+
+    public static final ThickPoleBlock THICK_POLE_BLUE = new ThickPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thick_pole_blue"), THICK_POLE_BLUE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thick_pole_blue"), new BlockItem(THICK_POLE_BLUE, new Item.Settings()));
+    }
+
+    public static final ThickPoleBlock THICK_POLE_GRAY = new ThickPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.GRAY).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thick_pole_gray"), THICK_POLE_GRAY);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thick_pole_gray"), new BlockItem(THICK_POLE_GRAY, new Item.Settings()));
+    }
+
+    public static final ThickPoleBlock THICK_POLE_WHITE = new ThickPoleBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.WHITE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","thick_pole_white"), THICK_POLE_WHITE);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","thick_pole_white"), new BlockItem(THICK_POLE_WHITE, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_D_BL = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_d_bl"), SIGN_D_BL);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_d_bl"), new BlockItem(SIGN_D_BL, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_D_BR = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_d_br"), SIGN_D_BR);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_d_br"), new BlockItem(SIGN_D_BR, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_PARKING_1 = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.BLUE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_parking_1"), SIGN_PARKING_1);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_parking_1"), new BlockItem(SIGN_PARKING_1, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_PARKING_2 = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_parking_2"), SIGN_PARKING_2);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_parking_2"), new BlockItem(SIGN_PARKING_2, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_NO_DRIVING = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_no_driving"), SIGN_NO_DRIVING);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_no_driving"), new BlockItem(SIGN_NO_DRIVING, new Item.Settings()));
+    }
+
+    public static final CircleTrafficSignBlock SIGN_NO_PARKING = new CircleTrafficSignBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.RED).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","sign_no_parking"), SIGN_NO_PARKING);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","sign_no_parking"), new BlockItem(SIGN_NO_PARKING, new Item.Settings()));
+    }
+
+    //* CITYCRAFT_RAILWAY ↓ *//
+
+    public static final OverheadCatenarySupportFrameBlock OVERHEAD_CATENARY_SUPPORT_FRAME = new OverheadCatenarySupportFrameBlock
+            (FabricBlockSettings.of(Material.METAL,MapColor.WHITE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","overhead_catenary_support_frame_1"), OVERHEAD_CATENARY_SUPPORT_FRAME);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","overhead_catenary_support_frame_1"), new BlockItem(OVERHEAD_CATENARY_SUPPORT_FRAME, new Item.Settings()));
+    }
+
+    public static final OverheadCatenaryPole1Block OVERHEAD_CATENARY_SUPPORT_POLE_1 = new OverheadCatenaryPole1Block
+            (FabricBlockSettings.of(Material.METAL,MapColor.WHITE).sounds(BlockSoundGroup.METAL).strength(1f,5f).requiresTool());
+    {
+        Registry.register(Registry.BLOCK, new Identifier("citycraft","overhead_catenary_support_pole_1"), OVERHEAD_CATENARY_SUPPORT_POLE_1);
+        Registry.register(Registry.ITEM, new Identifier("citycraft","overhead_catenary_support_pole_1"), new BlockItem(OVERHEAD_CATENARY_SUPPORT_POLE_1, new Item.Settings()));
     }
 
     public static final OverheadCatenaryBlock OVERHEAD_CATENARY_1 = new OverheadCatenaryBlock
@@ -354,6 +664,22 @@ public class CitycraftMod implements ModInitializer {
 
 
 
+    public static final Item CHANGING_STICK = new Item(new FabricItemSettings().maxCount(1));
+    {
+        Registry.register(Registry.ITEM, new Identifier("citycraft", "changing_stick"), CHANGING_STICK);
+    }
+
+
+
+    public static final ATipFromLanneYaoItem A_TIP_FROM_LANNE_YAO = new ATipFromLanneYaoItem(new FabricItemSettings().maxCount(1));
+    {
+        Registry.register(Registry.ITEM, new Identifier("citycraft","a_tip_from_lanne_yao"), A_TIP_FROM_LANNE_YAO);
+    }
+
+
+
+
+
     public static final ItemGroup CITYCRAFT_BLOCKS = FabricItemGroupBuilder.create(
             new Identifier("citycraft", "citycraft_blocks"))
             .icon(() -> new ItemStack(CitycraftMod.FINE_SLATES))
@@ -368,6 +694,40 @@ public class CitycraftMod implements ModInitializer {
             })
             .build();
 
+    public static final ItemGroup CITYCRAFT_ROADS = FabricItemGroupBuilder.create(
+                    new Identifier("citycraft","citycraft_roads"))
+            .icon(() -> new ItemStack(CitycraftMod.ASPHALT))
+            .appendItems(stacks -> {
+                stacks.add(new ItemStack(CitycraftMod.ASPHALT));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_S_M));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_S_S));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_D));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_R_S));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_R_M));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_R_L));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_S_S));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_S_M));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_C_C_M));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_SC_R_M));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_SC_S_S_L));
+                stacks.add(new ItemStack(CitycraftMod.WHITE_LINE_SC_S_S_R));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_S_M));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_S_S));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_D));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_R_S));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_R_M));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_R_L));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_S_S));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_S_M));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_C_C_M));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_SC_R_M));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_SC_S_S_L));
+                stacks.add(new ItemStack(CitycraftMod.YELLOW_LINE_SC_S_S_R));
+                stacks.add(new ItemStack(CitycraftMod.ZEBRA_CROSSING));
+                stacks.add(new ItemStack(CitycraftMod.GROUND_SIGN_PARKING));
+            })
+            .build();
+
     public static final ItemGroup CITYCRAFT_ROADS_DECORATIONS = FabricItemGroupBuilder.create(
             new Identifier("citycraft","citycraft_roads_decorations"))
             .icon(() -> new ItemStack(CitycraftMod.MODERN_IRON_BARS))
@@ -378,13 +738,13 @@ public class CitycraftMod implements ModInitializer {
                 stacks.add(new ItemStack(CitycraftMod.TRAFFIC_BOLLARD));
                 stacks.add(new ItemStack(CitycraftMod.BLUE_CONSTRUCTION_BARRIER));
                 stacks.add(new ItemStack(CitycraftMod.GREEN_CONSTRUCTION_BARRIER));
-                stacks.add(new ItemStack(CitycraftMod.ELEVATED_ROAD_GUARDRAIL));
+                stacks.add(new ItemStack(CitycraftMod.ELEVATED_ROAD_GUARDRAIL_1));
                 stacks.add(new ItemStack(CitycraftMod.SOUND_INSULATION_BOARD_1));
             })
             .build();
 
-    public static final ItemGroup CITYCRAFT_TRAFFIC_SIGNS = FabricItemGroupBuilder.create(
-                    new Identifier("citycraft","citycraft_traffic_signs"))
+    public static final ItemGroup CITYCRAFT_TRAFFIC = FabricItemGroupBuilder.create(
+                    new Identifier("citycraft","citycraft_traffic"))
             .icon(() -> new ItemStack(CitycraftMod.SQUARE_TRAFFIC_SIGN_S))
             .appendItems(stacks -> {
                 stacks.add(new ItemStack(CitycraftMod.TRAFFIC_SIGN_POLE_1));
@@ -408,22 +768,32 @@ public class CitycraftMod implements ModInitializer {
                 stacks.add(new ItemStack(CitycraftMod.SPEED_LIMIT_SIGN_70));
                 stacks.add(new ItemStack(CitycraftMod.SPEED_LIMIT_SIGN_80));
                 stacks.add(new ItemStack(CitycraftMod.SPEED_LIMIT_SIGN_90));
+                stacks.add(new ItemStack(CitycraftMod.THIN_POLE_BLUE));
+                stacks.add(new ItemStack(CitycraftMod.THIN_POLE_GRAY));
+                stacks.add(new ItemStack(CitycraftMod.THIN_POLE_WHITE));
+                stacks.add(new ItemStack(CitycraftMod.MEDIUM_POLE_BLUE));
+                stacks.add(new ItemStack(CitycraftMod.MEDIUM_POLE_GRAY));
+                stacks.add(new ItemStack(CitycraftMod.MEDIUM_POLE_WHITE));
+                stacks.add(new ItemStack(CitycraftMod.THICK_POLE_BLUE));
+                stacks.add(new ItemStack(CitycraftMod.THICK_POLE_GRAY));
+                stacks.add(new ItemStack(CitycraftMod.THICK_POLE_WHITE));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_D_BL));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_D_BR));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_NO_DRIVING));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_NO_PARKING));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_PARKING_1));
+                stacks.add(new ItemStack(CitycraftMod.SIGN_PARKING_2));
+                stacks.add(new ItemStack(CitycraftMod.CHANGING_STICK));
+
             })
             .build();
-/*
-    public static final ItemGroup CITYCRAFT_ROADS = FabricItemGroupBuilder.create(
-                    new Identifier("citycraft","citycraft_roads"))
-            .icon(() -> new ItemStack(CitycraftMod.))
-            .appendItems(stacks -> {
-                stacks.add(new ItemStack(CitycraftMod.));
-            })
-            .build();
-*/
+
     public static final ItemGroup CITYCRAFT_RAILWAY = FabricItemGroupBuilder.create(
                     new Identifier("citycraft","citycraft_railway"))
             .icon(() -> new ItemStack(Blocks.RAIL))
             .appendItems(stacks -> {
-                stacks.add(new ItemStack(CitycraftMod.INSULATOR_1));
+                stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_SUPPORT_FRAME));
+                stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_SUPPORT_POLE_1));
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_1));
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_2));
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_3));
@@ -434,6 +804,7 @@ public class CitycraftMod implements ModInitializer {
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_8));
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_9));
                 stacks.add(new ItemStack(CitycraftMod.OVERHEAD_CATENARY_10));
+                stacks.add(new ItemStack(CitycraftMod.A_TIP_FROM_LANNE_YAO));
             })
             .build();
 
@@ -456,4 +827,29 @@ public class CitycraftMod implements ModInitializer {
     {
         Registry.register(Registry.SOUND_EVENT, CitycraftMod.NEVER_GONNA_GIVE_YOU_UP, NEVER_GONNA_GIVE_YOU_UP_SOUND);
     }
+
+
+
+
+
+
+
+
+
+/*
+    public static final Block BOX_BLOCK;
+    public static final BlockItem BOX_BLOCK_ITEM;
+    public static final BlockEntityType<BoxBlockEntity> BOX_BLOCK_ENTITY;
+    public static final ScreenHandlerType<BoxScreenHandler> BOX_SCREEN_HANDLER;
+
+    public static final String MOD_ID = "citycraft";
+    // 我们的大型箱子中不同部分的公共id
+    public static final Identifier BOX = new Identifier(MOD_ID, "box_block");
+
+    static {
+        BOX_BLOCK = Registry.register(Registry.BLOCK, BOX, new BoxBlock(FabricBlockSettings.copyOf(Blocks.CHEST)));
+        BOX_BLOCK_ITEM = Registry.register(Registry.ITEM, BOX, new BlockItem(BOX_BLOCK, new Item.Settings().group(ItemGroup.MISC)));
+        BOX_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, BOX, FabricBlockEntityTypeBuilder.create(BoxBlockEntity::new, BOX_BLOCK).build(null));
+        BOX_SCREEN_HANDLER = ScreenHandlerRegistry.registerSimple(BOX, BoxScreenHandler::new);
+    }*/
 }

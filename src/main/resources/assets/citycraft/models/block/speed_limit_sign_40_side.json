@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/circle_traffic_sign_side",
+  "textures": {
+    "all": "citycraft:block/speed_limit_sign_40",
+    "particle": "citycraft:block/speed_limit_sign_40",
+    "0": "citycraft:block/speed_limit_sign_40"
+  }
+}

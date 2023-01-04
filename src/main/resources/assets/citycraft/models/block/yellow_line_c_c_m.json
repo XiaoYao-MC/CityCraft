@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/yellow_line_c_c_m",
+    "particle": "citycraft:block/yellow_line_c_c_m",
+    "0": "citycraft:block/yellow_line_c_c_m"
+  }
+}

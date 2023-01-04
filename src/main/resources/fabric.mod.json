@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "citycraft",
-  "version": "1.0.094",
+  "version": "1.2.2",
   "name": "City Craft",
   "description": "Help you to build cities easily!",
   "authors": [
@@ -9,7 +9,7 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/citycraft",
-    "sources": ""
+    "sources": "https://github.com/LanneYao/CityCraft"
   },
   "license": "MIT",
   "icon": "assets/citycraft/icon.png",
@@ -23,7 +23,7 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.10",
     "fabric": "*",
     "minecraft": "~1.18",
     "java": ">=17"

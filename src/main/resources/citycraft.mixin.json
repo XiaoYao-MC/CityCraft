@@ -1,7 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
+<<<<<<< Updated upstream
   "package": "net.citycraft.mixin",
+=======
+  "package": "net.citycraft",
+>>>>>>> Stashed changes
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],

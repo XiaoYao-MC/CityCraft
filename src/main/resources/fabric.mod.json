@@ -8,7 +8,11 @@
     "Yao_Child"
   ],
   "contact": {
+<<<<<<< Updated upstream
     "homepage": "https://modrinth.com/mod/citycraft",
+=======
+    "homepage": "",
+>>>>>>> Stashed changes
     "sources": ""
   },
   "license": "MIT",

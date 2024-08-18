@@ -7,6 +7,7 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
@@ -30,17 +31,20 @@ public class AmazingBlockBlock extends Block {
         tooltip.add(new TranslatableText("block.citycraft.amazing_block.tooltip").formatted(Formatting.DARK_PURPLE));
     }
 
+    public static int AMAZING_BLOCK_PLAY_MUSIC = 1;
+
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity placedBy, Hand hand, BlockHitResult blockHitResult) {
         if (!world.isClient) {
-            world.playSound(
-                    null,
-                    blockPos,
-                    CitycraftMod.NEVER_GONNA_GIVE_YOU_UP_SOUND,
-                    SoundCategory.BLOCKS,
-                    1f,
-                    1f
-            );
+            if (AMAZING_BLOCK_PLAY_MUSIC == 1)
+                world.playSound(
+                        null,
+                        blockPos,
+                        CitycraftMod.NEVER_GONNA_GIVE_YOU_UP_SOUND,
+                        SoundCategory.BLOCKS,
+                        1f,
+                        1f
+                );
         }
         return ActionResult.SUCCESS;
     }

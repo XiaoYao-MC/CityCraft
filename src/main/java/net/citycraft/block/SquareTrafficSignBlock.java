@@ -29,13 +29,13 @@ public class SquareTrafficSignBlock extends HorizontalFacingBlock {
         Direction dir = state.get(FACING);
         switch(dir){
             case NORTH:
-                return VoxelShapes.cuboid(3/16f, 0f, 0f, 13/16f, 1f, 1/16f);
+                return VoxelShapes.cuboid(2/16f, -2/16f, 0f, 14/16f, 18/16f, 1/16f);
             case SOUTH:
-                return VoxelShapes.cuboid(3/16f, 0f, 15/16f, 13/16f, 1f, 1f);
+                return VoxelShapes.cuboid(2/16f, -2/16f, 15/16f, 14/16f, 18/16f, 1f);
             case EAST:
-                return VoxelShapes.cuboid(15/16f,0f,3/16f,1f,1f,13/16f);
+                return VoxelShapes.cuboid(15/16f,-2/16f,2/16f,1f,18/16f,14/16f);
             case WEST:
-                return VoxelShapes.cuboid(0f,0f,3/16f,1/16f,1f,13/16f);
+                return VoxelShapes.cuboid(0f,-2/16f,2/16f,1/16f,18/16f,14/16f);
         }
         return null;
     }

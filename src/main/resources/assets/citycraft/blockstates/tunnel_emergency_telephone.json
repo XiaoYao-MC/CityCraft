@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/tunnel_emergency_telephone"
+    },
+    "facing=east": {
+      "model": "citycraft:block/tunnel_emergency_telephone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/tunnel_emergency_telephone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/tunnel_emergency_telephone",
+      "y": 270
+    }
+  }
+}

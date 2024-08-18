@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/manhole_cover_circle",
+  "textures": {
+    "all": "citycraft:block/manhole_cover_circle",
+    "particle": "citycraft:block/manhole_cover_circle",
+    "0": "citycraft:block/manhole_cover_circle"
+  }
+}

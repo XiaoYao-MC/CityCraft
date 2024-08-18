@@ -1,0 +1,9 @@
+{
+  "parent": "citycraft:custom/tunnel_light_2",
+  "textures": {
+    "all": "minecraft:block/iron_block",
+    "particle": "minecraft:block/iron_block",
+    "0": "minecraft:block/iron_block",
+    "1": "citycraft:block/white"
+  }
+}

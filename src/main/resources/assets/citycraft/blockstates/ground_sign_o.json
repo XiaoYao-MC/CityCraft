@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/ground_sign_o"
+    },
+    "facing=east": {
+      "model": "citycraft:block/ground_sign_o",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/ground_sign_o",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/ground_sign_o",
+      "y": 270
+    }
+  }
+}

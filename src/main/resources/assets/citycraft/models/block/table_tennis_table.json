@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/table_tennis_table",
+  "textures": {
+    "all": "citycraft:block/table_tennis_table",
+    "particle": "citycraft:block/blue",
+    "0": "citycraft:block/table_tennis_table"
+  }
+}

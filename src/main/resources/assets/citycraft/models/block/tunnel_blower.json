@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/tunnel_blower",
+  "textures": {
+    "all": "citycraft:block/tunnel_blower",
+    "particle": "citycraft:block/tunnel_blower",
+    "0": "citycraft:block/tunnel_blower"
+  }
+}

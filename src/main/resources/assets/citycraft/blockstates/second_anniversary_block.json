@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/second_anniversary_block"
+    },
+    "facing=east": {
+      "model": "citycraft:block/second_anniversary_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/second_anniversary_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/second_anniversary_block",
+      "y": 270
+    }
+  }
+}

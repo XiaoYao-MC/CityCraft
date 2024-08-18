@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    "010",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gravel"
+    },
+    "1": {
+      "item": "minecraft:potion"
+    }
+  },
+  "result": {
+    "item": "citycraft:cement",
+    "count": 8
+  }
+}

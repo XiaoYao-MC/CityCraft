@@ -1,0 +1,12 @@
+{
+  "parent": "citycraft:custom/second_anniversary_block",
+	"textures": {
+		"0": "citycraft:block/smooth_stone",
+		"1": "citycraft:block/lime",
+		"2": "citycraft:block/amazing_block",
+		"3": "citycraft:block/ceramic_tiles_1",
+		"4": "citycraft:block/sign_d_car",
+		"5": "citycraft:block/conversion_stick",
+		"particle": "minecraft:block/smooth_stone"
+	}
+}

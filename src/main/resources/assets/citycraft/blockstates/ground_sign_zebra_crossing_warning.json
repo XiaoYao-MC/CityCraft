@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/ground_sign_zebra_crossing_warning"
+    },
+    "facing=east": {
+      "model": "citycraft:block/ground_sign_zebra_crossing_warning",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/ground_sign_zebra_crossing_warning",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/ground_sign_zebra_crossing_warning",
+      "y": 270
+    }
+  }
+}

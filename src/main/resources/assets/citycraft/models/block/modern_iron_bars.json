@@ -3,6 +3,6 @@
   "textures": {
     "all": "citycraft:block/black",
     "particle": "citycraft:block/black",
-    "missing": "citycraft:block/black"
+    "0": "citycraft:block/black"
   }
 }

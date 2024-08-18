@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/ground_sign_u",
+    "particle": "citycraft:block/ground_sign_u",
+    "0": "citycraft:block/ground_sign_u"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/arrow",
+  "textures": {
+    "all": "citycraft:block/arrow_forward_back_2",
+    "particle": "citycraft:block/arrow_forward_back_2",
+    "0": "citycraft:block/arrow_forward_back_2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/diversion_line_6",
+    "particle": "citycraft:block/diversion_line_6",
+    "0": "citycraft:block/diversion_line_6"
+  }
+}

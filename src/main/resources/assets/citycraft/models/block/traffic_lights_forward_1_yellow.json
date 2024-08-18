@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/traffic_lights_1",
+  "textures": {
+    "all": "citycraft:block/traffic_lights_forward_1_yellow",
+    "particle": "citycraft:block/traffic_lights_forward_1_yellow",
+    "0": "citycraft:block/traffic_lights_forward_1_yellow"
+  }
+}

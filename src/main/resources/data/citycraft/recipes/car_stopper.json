@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 3"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:yellow_dye"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:black_dye"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "citycraft:car_stopper",
+    "count": 1
+  }
+}

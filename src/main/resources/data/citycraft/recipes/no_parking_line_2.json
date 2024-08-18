@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 0 ",
+    " 1 ",
+    " 0 "
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:white_line_c_s_s"
+    },
+    "1": {
+      "item": "citycraft:white_line_s_m"
+    }
+  },
+  "result": {
+    "item": "citycraft:no_parking_line_2",
+    "count": 1
+  }
+}

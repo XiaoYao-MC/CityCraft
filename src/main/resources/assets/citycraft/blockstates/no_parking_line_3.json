@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/no_parking_line_3"
+    },
+    "facing=east": {
+      "model": "citycraft:block/no_parking_line_3",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/no_parking_line_3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/no_parking_line_3",
+      "y": 270
+    }
+  }
+}

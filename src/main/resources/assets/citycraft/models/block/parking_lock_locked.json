@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/parking_lock_locked",
+  "textures": {
+    "all": "citycraft:block/parking_lock_locked",
+    "particle": "citycraft:block/parking_lock_locked",
+    "0": "citycraft:block/parking_lock_locked"
+  }
+}

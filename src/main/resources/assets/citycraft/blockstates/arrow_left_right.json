@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/arrow_left_right"
+    },
+    "facing=east": {
+      "model": "citycraft:block/arrow_left_right",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/arrow_left_right",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/arrow_left_right",
+      "y": 270
+    }
+  }
+}

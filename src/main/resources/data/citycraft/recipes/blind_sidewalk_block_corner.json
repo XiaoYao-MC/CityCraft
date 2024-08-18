@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:blind_sidewalk_block"
+    }
+  },
+  "result": {
+    "item": "citycraft:blind_sidewalk_block_corner",
+    "count": 1
+  }
+}

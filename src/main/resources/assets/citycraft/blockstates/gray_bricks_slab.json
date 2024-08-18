@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/gray_bricks_slab"
+    },
+    "type=top": {
+      "model": "citycraft:block/gray_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "citycraft:block/gray_bricks_slab_full"
+    }
+  }
+}

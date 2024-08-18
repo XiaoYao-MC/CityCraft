@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    "   ",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "citycraft:stone_bricks_path",
+    "count": 6
+  }
+}

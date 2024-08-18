@@ -1,0 +1,14 @@
+{
+  "parent": "citycraft:custom/picture_display_platform",
+  "textures": {
+    "all": "minecraft:block/oak_planks",
+		"particle": "minecraft:block/oak_planks",
+    	"0": "minecraft:block/oak_planks",
+		"1": "minecraft:block/dark_oak_planks",
+		"2": "citycraft:test/secret_texture_3",
+		"3": "citycraft:test/secret_texture_2",
+		"4": "citycraft:test/secret_texture_1",
+		"6": "citycraft:test/text",
+		"7": "minecraft:block/oak_log"
+  }
+}

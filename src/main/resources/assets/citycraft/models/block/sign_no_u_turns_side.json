@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/circle_traffic_sign_side",
+  "textures": {
+    "all": "citycraft:block/sign_no_u_turns",
+    "particle": "citycraft:block/sign_no_u_turns",
+    "0": "citycraft:block/sign_no_u_turns"
+  }
+}

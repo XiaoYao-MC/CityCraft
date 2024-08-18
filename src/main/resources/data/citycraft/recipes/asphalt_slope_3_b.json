@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "citycraft:asphalt"
+    },
+    "result": "citycraft:asphalt_slope_3",
+    "count": 1
+}

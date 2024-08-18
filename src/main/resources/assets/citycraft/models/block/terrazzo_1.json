@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "citycraft:block/terrazzo_1",
+    "particle": "citycraft:block/terrazzo_1"
+  }
+}

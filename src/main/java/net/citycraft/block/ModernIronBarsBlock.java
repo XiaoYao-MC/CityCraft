@@ -29,10 +29,10 @@ public class ModernIronBarsBlock extends HorizontalFacingBlock {
 		switch(dir){
 			case NORTH:
 			case SOUTH:
-				return VoxelShapes.cuboid(0f, 0f, 7/16f, 1f, 18/16f, 9/16f);
+				return VoxelShapes.cuboid(0f, 0f, 7/16f, 1f, 22/16f, 9/16f);
 			case EAST:
 			case WEST:
-				return VoxelShapes.cuboid(7/16f,0f,0f,9/16f,18/16f,1f);
+				return VoxelShapes.cuboid(7/16f,0f,0f,9/16f,22/16f,1f);
 		}
 		return null;
 	}

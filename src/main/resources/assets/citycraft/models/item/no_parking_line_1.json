@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "citycraft:item/no_parking_line_1"
+  }
+}

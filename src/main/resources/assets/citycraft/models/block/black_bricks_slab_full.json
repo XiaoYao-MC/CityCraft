@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "citycraft:block/black_bricks",
+    "top": "citycraft:block/black_bricks",
+    "side": "citycraft:block/black_bricks"
+  }
+}

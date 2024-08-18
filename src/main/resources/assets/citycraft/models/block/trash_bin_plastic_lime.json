@@ -1,0 +1,9 @@
+{
+  "parent": "citycraft:custom/trash_bin_plastic",
+  "textures": {
+    "all": "citycraft:block/lime",
+    "particle": "citycraft:block/lime",
+    "0": "citycraft:block/lime",
+    "1": "citycraft:block/wheel"
+  }
+}

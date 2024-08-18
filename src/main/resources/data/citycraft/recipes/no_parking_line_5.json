@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 0 "
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:no_parking_line_4"
+    }
+  },
+  "result": {
+    "item": "citycraft:no_parking_line_5",
+    "count": 1
+  }
+}

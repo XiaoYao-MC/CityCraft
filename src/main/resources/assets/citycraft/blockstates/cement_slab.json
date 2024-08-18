@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "citycraft:block/cement_slab_top"
+    },
+    "type=bottom": {
+      "model": "citycraft:block/cement_slab"
+    },
+    "type=double": {
+      "model": "citycraft:block/cement"
+    }
+  }
+}

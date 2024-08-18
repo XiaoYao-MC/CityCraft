@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/stone_path"
+    },
+    "facing=east": {
+      "model": "citycraft:block/stone_path",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/stone_path",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/stone_path",
+      "y": 270
+    }
+  }
+}

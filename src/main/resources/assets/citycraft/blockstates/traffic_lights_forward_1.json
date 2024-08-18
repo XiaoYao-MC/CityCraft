@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,traffic_lights_colour=0": {
+      "model":"citycraft:block/traffic_lights_1"
+    },
+    "facing=east,traffic_lights_colour=0": {
+      "model":"citycraft:block/traffic_lights_1",
+      "y":90
+    },
+    "facing=south,traffic_lights_colour=0": {
+      "model":"citycraft:block/traffic_lights_1",
+      "y":180
+    },
+    "facing=west,traffic_lights_colour=0": {
+      "model": "citycraft:block/traffic_lights_1",
+      "y": 270
+    },
+    "facing=north,traffic_lights_colour=1": {
+      "model":"citycraft:block/traffic_lights_forward_1_green"
+    },
+    "facing=east,traffic_lights_colour=1": {
+      "model":"citycraft:block/traffic_lights_forward_1_green",
+      "y":90
+    },
+    "facing=south,traffic_lights_colour=1": {
+      "model":"citycraft:block/traffic_lights_forward_1_green",
+      "y":180
+    },
+    "facing=west,traffic_lights_colour=1": {
+      "model": "citycraft:block/traffic_lights_forward_1_green",
+      "y": 270
+    },
+    "facing=north,traffic_lights_colour=2": {
+      "model":"citycraft:block/traffic_lights_forward_1_yellow"
+    },
+    "facing=east,traffic_lights_colour=2": {
+      "model":"citycraft:block/traffic_lights_forward_1_yellow",
+      "y":90
+    },
+    "facing=south,traffic_lights_colour=2": {
+      "model":"citycraft:block/traffic_lights_forward_1_yellow",
+      "y":180
+    },
+    "facing=west,traffic_lights_colour=2": {
+      "model": "citycraft:block/traffic_lights_forward_1_yellow",
+      "y": 270
+    },
+    "facing=north,traffic_lights_colour=3": {
+      "model":"citycraft:block/traffic_lights_forward_1_red"
+    },
+    "facing=east,traffic_lights_colour=3": {
+      "model":"citycraft:block/traffic_lights_forward_1_red",
+      "y":90
+    },
+    "facing=south,traffic_lights_colour=3": {
+      "model":"citycraft:block/traffic_lights_forward_1_red",
+      "y":180
+    },
+    "facing=west,traffic_lights_colour=3": {
+      "model":"citycraft:block/traffic_lights_forward_1_red",
+      "y":270
+    }
+  }
+}

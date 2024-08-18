@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "citycraft:block/asphalt",
+    "bottom": "citycraft:block/asphalt",
+    "top": "citycraft:block/asphalt"
+  }
+}

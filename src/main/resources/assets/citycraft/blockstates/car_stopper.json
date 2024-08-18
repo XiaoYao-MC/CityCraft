@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/car_stopper"
+    },
+    "facing=east": {
+      "model": "citycraft:block/car_stopper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/car_stopper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/car_stopper",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "citycraft:block/gray_bricks",
+    "particle": "citycraft:block/gray_bricks"
+  }
+}

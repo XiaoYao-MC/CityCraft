@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/picture_display_platform"
+    },
+    "facing=east": {
+      "model": "citycraft:block/picture_display_platform",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/picture_display_platform",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/picture_display_platform",
+      "y": 270
+    }
+  }
+}

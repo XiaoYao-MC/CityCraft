@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/arrow",
+  "textures": {
+    "all": "citycraft:block/arrow_right",
+    "particle": "citycraft:block/arrow_right",
+    "0": "citycraft:block/arrow_right"
+  }
+}

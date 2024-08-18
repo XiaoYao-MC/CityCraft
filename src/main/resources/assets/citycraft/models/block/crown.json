@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/crown",
+  "textures": {
+    "all": "citycraft:block/crown",
+    "particle": "citycraft:block/crown",
+    "0": "citycraft:block/crown"
+  }
+}

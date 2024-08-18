@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,locked=false": {
+      "model": "citycraft:block/parking_lock"
+    },
+    "facing=east,locked=false": {
+      "model": "citycraft:block/parking_lock",
+      "y": 90
+    },
+    "facing=south,locked=false": {
+      "model": "citycraft:block/parking_lock",
+      "y": 180
+    },
+    "facing=west,locked=false": {
+      "model": "citycraft:block/parking_lock",
+      "y": 270
+    },
+    "facing=north,locked=true": {
+      "model": "citycraft:block/parking_lock_locked"
+    },
+    "facing=east,locked=true": {
+      "model": "citycraft:block/parking_lock_locked",
+      "y": 90
+    },
+    "facing=south,locked=true": {
+      "model": "citycraft:block/parking_lock_locked",
+      "y": 180
+    },
+    "facing=west,locked=true": {
+      "model": "citycraft:block/parking_lock_locked",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,colour=1": {
+      "model":"citycraft:block/trash_bin_plastic_light_blue"
+    },
+    "facing=east,colour=1": {
+      "model":"citycraft:block/trash_bin_plastic_light_blue",
+      "y":90
+    },
+    "facing=south,colour=1": {
+      "model":"citycraft:block/trash_bin_plastic_light_blue",
+      "y":180
+    },
+    "facing=west,colour=1": {
+      "model": "citycraft:block/trash_bin_plastic_light_blue",
+      "y": 270
+    },
+    "facing=north,colour=2": {
+      "model":"citycraft:block/trash_bin_plastic_lime"
+    },
+    "facing=east,colour=2": {
+      "model":"citycraft:block/trash_bin_plastic_lime",
+      "y":90
+    },
+    "facing=south,colour=2": {
+      "model":"citycraft:block/trash_bin_plastic_lime",
+      "y":180
+    },
+    "facing=west,colour=2": {
+      "model": "citycraft:block/trash_bin_plastic_lime",
+      "y": 270
+    },
+    "facing=north,colour=3": {
+      "model":"citycraft:block/trash_bin_plastic_yellow"
+    },
+    "facing=east,colour=3": {
+      "model":"citycraft:block/trash_bin_plastic_yellow",
+      "y":90
+    },
+    "facing=south,colour=3": {
+      "model":"citycraft:block/trash_bin_plastic_yellow",
+      "y":180
+    },
+    "facing=west,colour=3": {
+      "model": "citycraft:block/trash_bin_plastic_yellow",
+      "y": 270
+    },
+    "facing=north,colour=4": {
+      "model":"citycraft:block/trash_bin_plastic_red"
+    },
+    "facing=east,colour=4": {
+      "model":"citycraft:block/trash_bin_plastic_red",
+      "y":90
+    },
+    "facing=south,colour=4": {
+      "model":"citycraft:block/trash_bin_plastic_red",
+      "y":180
+    },
+    "facing=west,colour=4": {
+      "model":"citycraft:block/trash_bin_plastic_red",
+      "y":270
+    },
+    "facing=north,colour=5": {
+      "model":"citycraft:block/trash_bin_plastic_gray"
+    },
+    "facing=east,colour=5": {
+      "model":"citycraft:block/trash_bin_plastic_gray",
+      "y":90
+    },
+    "facing=south,colour=5": {
+      "model":"citycraft:block/trash_bin_plastic_gray",
+      "y":180
+    },
+    "facing=west,colour=5": {
+      "model": "citycraft:block/trash_bin_plastic_gray",
+      "y": 270
+    }
+  }
+}

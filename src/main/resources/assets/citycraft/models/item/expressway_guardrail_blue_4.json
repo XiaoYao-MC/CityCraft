@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "citycraft:item/expressway_guardrail_blue_4"
+  }
+}

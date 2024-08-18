@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/line",
+  "textures": {
+    "all": "citycraft:block/no_parking_line_5",
+    "particle": "citycraft:block/no_parking_line_5",
+    "0": "citycraft:block/no_parking_line_5"
+  }
+}

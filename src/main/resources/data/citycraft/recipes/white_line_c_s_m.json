@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 1 ",
+    "  0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_dye"
+    },
+    "1": {
+      "item": "citycraft:white_line_c_s_s"
+    }
+  },
+  "result": {
+    "item": "citycraft:white_line_c_s_m",
+    "count": 3
+  }
+}

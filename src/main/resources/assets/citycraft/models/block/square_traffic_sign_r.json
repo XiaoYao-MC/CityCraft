@@ -3,6 +3,6 @@
   "textures": {
     "all": "citycraft:block/square_traffic_sign_r",
     "particle": "citycraft:block/square_traffic_sign_r",
-    "missing": "citycraft:block/square_traffic_sign_r"
+    "0": "citycraft:block/square_traffic_sign_r"
   }
 }

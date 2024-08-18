@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/expressway_guardrail_4",
+  "textures": {
+    "all": "citycraft:block/expressway_guardrail_4",
+    "particle": "citycraft:block/expressway_guardrail_4",
+    "0": "citycraft:block/expressway_guardrail_4"
+  }
+}

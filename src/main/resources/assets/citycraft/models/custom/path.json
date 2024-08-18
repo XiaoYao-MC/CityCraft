@@ -1,0 +1,33 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "stone_bricks",
+		"particle": "stone_bricks"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 0.5, 7],
+			"faces": {
+				"north": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"east": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"south": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"west": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"up": {"uv": [1, 0, 15, 6], "texture": "#0"},
+				"down": {"uv": [1, 0, 15, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 0, 9],
+			"to": [15, 0.5, 15],
+			"faces": {
+				"north": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"east": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"south": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"west": {"uv": [15, 0, 16, 5.5], "texture": "#0"},
+				"up": {"uv": [1, 0, 15, 6], "texture": "#0"},
+				"down": {"uv": [1, 0, 15, 6], "texture": "#0"}
+			}
+		}
+	]
+}

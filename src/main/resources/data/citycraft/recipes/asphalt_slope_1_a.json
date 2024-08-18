@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "citycraft:asphalt"
+    }
+  },
+  "result": {
+    "item": "citycraft:asphalt_slope_1",
+    "count": 6
+  }
+}

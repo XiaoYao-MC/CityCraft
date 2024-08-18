@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 1 ",
+    "2  "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_dye"
+    },
+    "1": {
+      "item": "citycraft:white_line_sc_r_m"
+    },
+    "2": {
+      "item": "citycraft:white_line_c_s_s"
+    }
+  },
+  "result": {
+    "item": "citycraft:diversion_line_3",
+    "count": 1
+  }
+}

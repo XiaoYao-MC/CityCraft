@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/table_tennis_table"
+    },
+    "facing=east": {
+      "model": "citycraft:block/table_tennis_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/table_tennis_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/table_tennis_table",
+      "y": 270
+    }
+  }
+}

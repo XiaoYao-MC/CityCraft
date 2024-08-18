@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/manhole_cover_circle"
+    },
+    "facing=east": {
+      "model": "citycraft:block/manhole_cover_circle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/manhole_cover_circle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/manhole_cover_circle",
+      "y": 270
+    }
+  }
+}

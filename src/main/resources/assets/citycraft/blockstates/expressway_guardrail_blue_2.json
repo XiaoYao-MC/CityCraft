@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "citycraft:block/expressway_guardrail_blue_2"
+    },
+    "facing=south": {
+      "model": "citycraft:block/expressway_guardrail_blue_2",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "citycraft:block/expressway_guardrail_blue_2",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "citycraft:block/expressway_guardrail_blue_2",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/triangle_traffic_sign",
+  "textures": {
+    "all": "citycraft:block/sign_danger_construction",
+    "particle": "citycraft:block/sign_danger_construction",
+    "0": "citycraft:block/sign_danger_construction"
+  }
+}

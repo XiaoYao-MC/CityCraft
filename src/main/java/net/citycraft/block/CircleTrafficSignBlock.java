@@ -34,7 +34,7 @@ public class CircleTrafficSignBlock extends HorizontalFacingBlock {
 	}
 
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-		if (player.getMainHandStack().getItem()== CitycraftMod.CHANGING_STICK){
+		if (player.getMainHandStack().getItem() == CitycraftMod.CONVERSION_STICK){
 			if (state.get(SIDE)) world.setBlockState(pos, state.with(SIDE, false));
 			else world.setBlockState(pos, state.with(SIDE, true));
 		}

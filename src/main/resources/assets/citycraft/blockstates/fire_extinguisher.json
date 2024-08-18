@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/fire_extinguisher"
+    },
+    "facing=east": {
+      "model": "citycraft:block/fire_extinguisher",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/fire_extinguisher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/fire_extinguisher",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/tunnel_blower"
+    },
+    "facing=east": {
+      "model": "citycraft:block/tunnel_blower",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/tunnel_blower",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/tunnel_blower",
+      "y": 270
+    }
+  }
+}

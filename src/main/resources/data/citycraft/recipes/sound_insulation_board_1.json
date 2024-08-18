@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:light_gray_concrete"
+    },
+    "1": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "citycraft:sound_insulation_board_1",
+    "count": 1
+  }
+}

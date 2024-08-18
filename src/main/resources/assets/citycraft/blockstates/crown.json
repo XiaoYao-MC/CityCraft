@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "citycraft:block/crown"
+    },
+    "facing=east": {
+      "model": "citycraft:block/crown",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/crown",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "citycraft:block/crown",
+      "y": 270
+    }
+  }
+}

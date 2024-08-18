@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 0 ",
+    "000",
+    " 0 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "citycraft:yellow_line_cross",
+    "count": 3
+  }
+}

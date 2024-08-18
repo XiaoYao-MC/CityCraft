@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/fire_extinguisher",
+  "textures": {
+    "all": "citycraft:block/fire_extinguisher",
+    "particle": "citycraft:block/fire_extinguisher",
+    "0": "citycraft:block/fire_extinguisher"
+  }
+}

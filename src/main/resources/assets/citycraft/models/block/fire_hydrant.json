@@ -1,0 +1,8 @@
+{
+  "parent": "citycraft:custom/fire_hydrant",
+  "textures": {
+    "all": "citycraft:block/fire_hydrant",
+    "particle": "citycraft:block/fire_hydrant",
+    "0": "citycraft:block/fire_hydrant"
+  }
+}

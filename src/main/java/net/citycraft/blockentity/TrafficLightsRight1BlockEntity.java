@@ -22,15 +22,15 @@ public class TrafficLightsRight1BlockEntity extends BlockEntity {
         switch(dir) {
             case NORTH:
             case SOUTH:
-                if (TIME > 0 & TIME <= 57 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
+                if (TIME > 0 & TIME < 57 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
                     world.setBlockState(pos, state.with(TRAFFIC_LIGHTS_COLOUR, 1));
                     break;
                 }
-                if (TIME > 57 & TIME < 60 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
+                if (TIME >= 57 & TIME <= 60 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
                     world.setBlockState(pos, state.with(TRAFFIC_LIGHTS_COLOUR, 2));
                     break;
                 }
-                if (TIME >= 60 & TIME <= 70 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
+                if (TIME > 60 & TIME <= 70 & (state.get(TRAFFIC_LIGHTS_COLOUR) != 0)) {
                     world.setBlockState(pos, state.with(TRAFFIC_LIGHTS_COLOUR, 3));
                     break;
                 }

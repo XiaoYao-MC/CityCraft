@@ -1,8 +1,6 @@
 package net.citycraft.block;
 
-import static net.citycraft.CitycraftMod.TRAFFIC_LIGHTS_RIGHT_1_ENTITY;
 import net.citycraft.CitycraftMod;
-import net.citycraft.blockentity.TrafficLightsLeft1BlockEntity;
 import net.citycraft.blockentity.TrafficLightsRight1BlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -28,6 +26,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 import java.util.List;
+
+import static net.citycraft.CitycraftMod.TRAFFIC_LIGHTS_RIGHT_1_ENTITY;
 
 
 public  class TrafficLightsRight1Block extends BlockWithEntity implements BlockEntityProvider {
@@ -79,7 +79,7 @@ public  class TrafficLightsRight1Block extends BlockWithEntity implements BlockE
     }
 
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new TrafficLightsLeft1BlockEntity(pos, state);
+        return new TrafficLightsRight1BlockEntity(pos, state);
     }
 
     @Override

@@ -1315,7 +1315,7 @@ public class CitycraftMod implements ModInitializer {
     }
 
     public static final ElevatedRoadGuardrail1Block ELEVATED_ROAD_GUARDRAIL_1_BLUE = new ElevatedRoadGuardrail1Block
-            (FabricBlockSettings.of(Material.METAL, MapColor.GREEN).sounds(BlockSoundGroup.METAL).strength(1f, 5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL, MapColor.LIGHT_BLUE).sounds(BlockSoundGroup.METAL).strength(1f, 5f).requiresTool());
 
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft", "elevated_road_guardrail_1_blue"), ELEVATED_ROAD_GUARDRAIL_1_BLUE);

@@ -1,8 +1,9 @@
 package net.citycraft.blockentity;
 
 import static net.citycraft.CitycraftMod.*;
-import static net.citycraft.block.TrafficLightsLeft1Block.FACING;
+import static net.citycraft.block.TrafficLightsForward1Block.*;
 import static net.citycraft.block.TrafficLightsLeft1Block.TRAFFIC_LIGHTS_COLOUR;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;

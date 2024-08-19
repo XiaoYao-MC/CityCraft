@@ -1,6 +1,8 @@
-package net.citycraft.block;
+/*package net.citycraft.block;
 
+import net.citycraft.blockentity.SignBlockEntity;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
@@ -10,13 +12,9 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-import static net.minecraft.state.property.Properties.FACING;
-
-public class TunnelLight2Block extends HorizontalFacingBlock {
-
-    public TunnelLight2Block(Settings settings) {
-        super(settings.nonOpaque());
-        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+public class SignBlock extends HorizontalFacingBlock implements BlockEntityProvider {
+    public SignBlock(Settings settings) {
+        super(settings);
     }
 
     @Override
@@ -28,18 +26,22 @@ public class TunnelLight2Block extends HorizontalFacingBlock {
         Direction dir = state.get(FACING);
         switch(dir){
             case NORTH:
-                return VoxelShapes.cuboid(0f, 7/16f, 0f, 1f, 9/16f, 2/16f);
             case SOUTH:
-                return VoxelShapes.cuboid(0f, 7/16f, 14/16f, 1f, 9/16f, 1f);
+                return VoxelShapes.cuboid(0f, 0f, 7/16f, 1f, 8/16f, 9/16f);
             case EAST:
-                return VoxelShapes.cuboid(14/16f,7/16f,0f,1f,9/16f,1f);
             case WEST:
-                return VoxelShapes.cuboid(0f,7/16f,0f,2/16f,9/16f,1f);
+                return VoxelShapes.cuboid(7/16f,0f,0f,9/16f,8/16f,1f);
         }
         return null;
     }
+
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
+        return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
     }
 
-}
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new SignBlockEntity(pos, state);
+    }
+
+}*/

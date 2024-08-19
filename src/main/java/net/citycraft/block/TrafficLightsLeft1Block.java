@@ -1,5 +1,6 @@
 package net.citycraft.block;
 
+import static net.citycraft.CitycraftMod.TRAFFIC_LIGHTS_LEFT_1_ENTITY;
 import net.citycraft.CitycraftMod;
 import net.citycraft.blockentity.TrafficLightsLeft1BlockEntity;
 import net.minecraft.block.*;
@@ -25,8 +26,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 import java.util.List;
-
-import static net.citycraft.CitycraftMod.TRAFFIC_LIGHTS_LEFT_1_ENTITY;
 
 
 public  class TrafficLightsLeft1Block extends BlockWithEntity implements BlockEntityProvider {
@@ -66,7 +65,7 @@ public  class TrafficLightsLeft1Block extends BlockWithEntity implements BlockEn
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
+        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     public BlockState rotate(BlockState state, BlockRotation rotation) {

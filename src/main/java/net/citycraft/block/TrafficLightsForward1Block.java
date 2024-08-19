@@ -65,7 +65,7 @@ public  class TrafficLightsForward1Block extends BlockWithEntity implements Bloc
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
+        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     public BlockState rotate(BlockState state, BlockRotation rotation) {

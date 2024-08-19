@@ -1,5 +1,3 @@
-///研究箱子的做法，之后1.5.x家具更新可能出储存箱什么的
-
 /*package net.citycraft.block;
 
 import net.citycraft.blockentity.BoxBlockEntity;

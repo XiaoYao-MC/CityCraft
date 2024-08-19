@@ -10,7 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -29,7 +28,7 @@ public class OverheadCatenarySupportFrameBlock extends HorizontalFacingBlock {
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("block.citycraft.insulator_1.tooltip").formatted(Formatting.DARK_PURPLE));
+        tooltip.add(Text.translatable("block.citycraft.insulator_1.tooltip").formatted(Formatting.DARK_PURPLE));
     }
 
     @Override

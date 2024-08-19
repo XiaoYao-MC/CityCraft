@@ -7,9 +7,7 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -28,7 +26,7 @@ public class AmazingBlockBlock extends Block {
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("block.citycraft.amazing_block.tooltip").formatted(Formatting.DARK_PURPLE));
+        tooltip.add(Text.translatable("block.citycraft.amazing_block.tooltip").formatted(Formatting.DARK_PURPLE));
     }
 
     public static int AMAZING_BLOCK_PLAY_MUSIC = 1;

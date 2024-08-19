@@ -24,6 +24,7 @@
   },
   "depends": {
     "fabric": "*",
-    "java": ">=16"
+    "minecraft": "~1.19",
+    "java": ">=17"
   }
 }

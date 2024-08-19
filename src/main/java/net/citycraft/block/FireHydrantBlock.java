@@ -23,7 +23,7 @@ public class FireHydrantBlock extends HorizontalFacingBlock {
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(5/16f, 0f, 5/16f, 11/16f, 14/16f, 11/16f);
+        return VoxelShapes.cuboid(6/16f, 0f, 6/16f, 10/16f, 10/16f, 10/16f);
     }
 
     public BlockState getPlacementState(ItemPlacementContext ctx) {

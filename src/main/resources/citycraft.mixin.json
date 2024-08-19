@@ -4,7 +4,6 @@
   "package": "net.citycraft",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "CitycraftMixin"
   ],
   "client": [
   ],

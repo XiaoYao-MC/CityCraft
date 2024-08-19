@@ -9,14 +9,14 @@ import net.citycraft.item.ATipFromXiaoYaoItem;
 import net.citycraft.item.ConversionStickItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.entity.decoration.painting.PaintingMotive;
+import net.minecraft.entity.decoration.painting.PaintingVariant;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
@@ -1315,7 +1315,7 @@ public class CitycraftMod implements ModInitializer {
     }
 
     public static final ElevatedRoadGuardrail1Block ELEVATED_ROAD_GUARDRAIL_1_BLUE = new ElevatedRoadGuardrail1Block
-            (FabricBlockSettings.of(Material.METAL, MapColor.LIGHT_BLUE).sounds(BlockSoundGroup.METAL).strength(1f, 5f).requiresTool());
+            (FabricBlockSettings.of(Material.METAL, MapColor.GREEN).sounds(BlockSoundGroup.METAL).strength(1f, 5f).requiresTool());
 
     {
         Registry.register(Registry.BLOCK, new Identifier("citycraft", "elevated_road_guardrail_1_blue"), ELEVATED_ROAD_GUARDRAIL_1_BLUE);
@@ -2220,11 +2220,11 @@ public class CitycraftMod implements ModInitializer {
 
     {
         new CitycraftCommand();
-        CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> CitycraftCommand.register(dispatcher));
+        CommandRegistrationCallback.EVENT.register((dispatcher, dedicated, environment) -> CitycraftCommand.register(dispatcher));
     }
 
     {
-        Registry.register(Registry.PAINTING_MOTIVE, new Identifier("citycraft", "plain_1"), new PaintingMotive(48,32));
+        Registry.register(Registry.PAINTING_VARIANT, new Identifier("citycraft", "plain_1"), new PaintingVariant(48,32));
     }
 
     /*public static final BedBlock TEST_11 = new BedBlock(DyeColor.RED, AbstractBlock.Settings.of(Material.WOOD));

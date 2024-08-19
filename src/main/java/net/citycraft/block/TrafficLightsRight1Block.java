@@ -15,7 +15,6 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -85,7 +84,7 @@ public  class TrafficLightsRight1Block extends BlockWithEntity implements BlockE
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        tooltip.add(new TranslatableText("block.citycraft.traffic_lights.tooltip").formatted(Formatting.DARK_PURPLE));
+        tooltip.add(Text.translatable("block.citycraft.traffic_lights.tooltip").formatted(Formatting.DARK_PURPLE));
     }
 
     @Override
